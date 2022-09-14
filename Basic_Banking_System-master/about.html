@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/navigation.css">
+		<style>
+
+
+			.collapsible {
+			  background-color: #066079;
+			  color: white;
+			  cursor: pointer;
+			  padding: 18px;
+			  width: 100%;
+			  border: none;
+			  text-align: left;
+			  outline: none;
+			  font-size: 15px;
+			}
+
+			.active, .collapsible:hover {
+			  background-color: #19BAC3;
+			}
+
+			.content {
+			  padding: 0 18px;
+			  display: none;
+			  overflow: hidden;
+			  background-color: #f1f1f1;
+			}
+
+			h1{
+			color: white;}
+			  
+			body {
+			  background-image: url('img/banking.jpg');
+			  background-repeat: no-repeat;
+			  background-attachment: fixed;
+			  background-size: cover;
+			}
+			
+			
+img {
+  display:block;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+}
+		</style>
+	</head>
+<body background="backlogin.jpg">
+	
+
+		<ul>
+			<li><a href="index.php"><font color="white"><b>Home</font></a></li>
+			<li><a href="customers.php"><font color="white">Customers</font></a></li>
+			<li><a href="history.php"><font color="white">History</font></a></li>
+
+		</ul>
+
+		<center><br><br><br>
+		<h1 style="color:white;"><b>Greetings!</b></h1>
+		<br><br><br><br><br><br><br>
+
+		<button type="button" class="collapsible">Made By:</button>
+		
+		<div class="content">
+			<img src="img/me.jpg" alt=""><br>
+			 <h4>This Project has been made by <br><br>Samiksha Kukadkar of Deogiri Institute of Engineering and Management Studies, Aurangabad </h4>
+		</div>
+
+		<p></p><p></p>
+		<button type="button" class="collapsible">About the Task:</button>
+		<div class="content">
+		  <p>This is a project on "Basic Banking system"</p>
+		  <p>It performs the function of sending money from one user to the other, who are present in the database.</p>
+		  <p>It displays the list of all the users along with their bank balances and also displays the transaction history.</p>
+		</div>
+
+		<p></p>
+		<button type="button" class="collapsible">Task Done For:</button>
+		<div class="content">
+		  <p>The Sparks Foundation</p><br>
+		  <img src="img/sparkslogo.png" alt=""><br>
+		  <p></p>
+		</div>
+
+		<p></p>
+		<button type="button" class="collapsible">References:</button>
+		<div class="content">
+		  <p>https://www.youtube.com</p>
+		  <p>https://www.bootstrapcdn.com/</p>
+		  <p>https://fonts.google.com/</p>
+		  <p>https://stackoverflow.com/</p>
+		  <p></p>
+		</div>
+
+		<br><br><br><br>
+
+		<script>
+			var coll = document.getElementsByClassName("collapsible");
+			var i;
+
+			for (i = 0; i < coll.length; i++) {
+			    coll[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				if (content.style.display === "block") {
+				  content.style.display = "none";
+				} else {
+				  content.style.display = "block";
+				}
+			  });
+			}
+		</script>
+
+</body>
+</html>
